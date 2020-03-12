@@ -1,0 +1,93 @@
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  border-bottom: 20px solid #2C537E;
+  border-top: 20px solid #2C537E;
+}
+
+.container .header {
+  padding: 40px;
+  background-color: #F1F1F0;
+  text-align: center;
+}
+
+.container .header .full_name {
+  font-weight: 400;
+  font-size: 38px;
+}
+
+.container .header .profiles .sub_profile {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.container .header .profiles .sub_profile a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.container .header .profiles .sub_profile a:hover {
+  color: #1890ff;
+}
+
+.container .header .profiles .sep {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.container .section {
+  background-color: white;
+  padding: 0 40px;
+}
+
+.container .section .title {
+  font-size: 28px;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e8e6e6;
+}
+
+.container .section ul li {
+  margin: 10px 0px;
+}
+
+.container .skills .skills_wrapper {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .skills .skills_wrapper .skill {
+  font-size: 18px;
+  border-radius: 3px;
+  background-color: #9CACC7;
+  height: 22px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.container .experience .employment {
+  margin-top: 15px;
+}
+
+.container .experience .employment .employment_header .sep {
+  font-weight: bold;
+}
+
+.container .experience .employment .employment_header .employer {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.container .experience .employment .employment_header .employment_date_range {
+  font-size: 15px;
+  color: grey;
+  font-style: italic;
+}
+/*# sourceMappingURL=styles.css.map */

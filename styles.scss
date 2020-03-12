@@ -1,0 +1,111 @@
+$link_color:  #1890ff;
+$top_bottom_padding_color: #2C537E;
+$skill_backgroud_color: #9CACC7;
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  border-bottom: 20px solid $top_bottom_padding_color;
+  border-top: 20px solid $top_bottom_padding_color;
+
+  .header {
+    padding: 40px;
+    background-color: #F1F1F0;
+    text-align: center;
+
+    .full_name {
+      font-weight: 400;
+      font-size: 38px;
+      
+    }
+
+    .profiles {
+      .sub_profile {
+        text-align: right;
+        margin-bottom: 10px;
+        
+        a {
+          text-decoration: none;
+          color: rgba(0, 0, 0, 0.85);
+          &:hover {
+            color: $link_color;
+          }
+        }
+      }
+
+      .sep {
+        margin-left: 2px;
+        margin-right: 2px;
+      }
+    }
+    
+  }
+
+  .section {
+    background-color: white;
+    padding: 0 40px;
+    .title {
+      font-size: 28px;
+      font-weight: 600;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e8e6e6;
+    }
+
+    ul {
+      li {
+        margin: 10px 0px;
+      }
+    }
+  }
+
+  .overview {
+    
+  }
+
+  .skills {
+    .skills_wrapper {
+      margin-top: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      .skill {
+        font-size: 18px;
+        border-radius: 3px;
+        background-color: $skill_backgroud_color;
+        height: 22px;
+        padding: 5px 10px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .experience {
+    .employment {
+      margin-top: 15px;
+      .employment_header {
+        .sep {
+          font-weight: bold;
+        }
+        .employer {
+          font-weight: bold;
+          font-style: italic;
+        }
+        .employment_job_title {
+  
+        }
+        .employment_date_range {
+          font-size: 15px;
+          color: grey;
+          font-style: italic;
+        }
+        .employment_overview {
+          
+        }
+      }
+      
+    }
+  }
+}
+
+
