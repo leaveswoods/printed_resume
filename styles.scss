@@ -1,6 +1,11 @@
 $link_color:  #1890ff;
 $top_bottom_padding_color: #2C537E;
 $skill_backgroud_color: #9CACC7;
+
+body {
+  margin: 0px;
+}
+
 .container {
   font-family: Arial, Helvetica, sans-serif;
   max-width: 1200px;
@@ -9,7 +14,7 @@ $skill_backgroud_color: #9CACC7;
   border-top: 20px solid $top_bottom_padding_color;
 
   .header {
-    padding: 40px;
+    padding: 20px 40px;
     background-color: #F1F1F0;
     text-align: center;
 
