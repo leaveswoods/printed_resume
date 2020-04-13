@@ -1,34 +1,29 @@
 $link_color:  #1890ff;
-$top_bottom_padding_color: #2C537E;
-$skill_backgroud_color: #9CACC7;
-
+$section_title_color: #1f6eb7;
 body {
   margin: 0px;
 }
-
+ul {
+  margin-block-start: 0px;
+    margin-block-end: 0px;
+}
 .container {
   font-family: Arial, Helvetica, sans-serif;
-  max-width: 1200px;
+  max-width: 900px;
   margin: auto;
-  border-bottom: 20px solid $top_bottom_padding_color;
-  border-top: 20px solid $top_bottom_padding_color;
-
+  padding-bottom: 10px;
   .header {
     padding: 20px 40px;
-    background-color: #F1F1F0;
     text-align: center;
-
+    margin-bottom: 5px;
     .full_name {
       font-weight: 400;
       font-size: 38px;
-      
     }
-
     .profiles {
       .sub_profile {
         text-align: right;
         margin-bottom: 10px;
-        
         a {
           text-decoration: none;
           color: rgba(0, 0, 0, 0.85);
@@ -37,54 +32,35 @@ body {
           }
         }
       }
-
-      .sep {
-        margin-left: 2px;
-        margin-right: 2px;
-      }
-    }
-    
+    } 
   }
-
   .section {
     background-color: white;
-    padding: 0 40px;
-    .title {
+    padding: 5px 40px;
+    .date_range {
+      font-size: 15px;
+      color: grey;
+      font-style: italic;
+      font-weight: 100;
+    }
+    .sep {
+      margin-left: 2px;
+      margin-right: 2px;
+      font-weight: 100;
+    }
+    &>.title {
+      color: $section_title_color;
       font-size: 28px;
       font-weight: 600;
-      padding-top: 10px;
       padding-bottom: 10px;
       border-bottom: 1px solid #e8e6e6;
     }
-
     ul {
       li {
         margin: 10px 0px;
       }
     }
   }
-
-  .overview {
-    
-  }
-
-  .skills {
-    .skills_wrapper {
-      margin-top: 15px;
-      display: flex;
-      flex-wrap: wrap;
-      .skill {
-        font-size: 18px;
-        border-radius: 3px;
-        background-color: $skill_backgroud_color;
-        height: 22px;
-        padding: 5px 10px;
-        margin-right: 10px;
-        margin-bottom: 15px;
-      }
-    }
-  }
-
   .experience {
     .employment {
       margin-top: 15px;
@@ -96,19 +72,47 @@ body {
           font-weight: bold;
           font-style: italic;
         }
-        .employment_job_title {
-  
+      }
+      .technical_stack {
+        display: flex;
+        .title {
+          font-weight: 600;
+          margin-left: 24px;
         }
-        .employment_date_range {
-          font-size: 15px;
-          color: grey;
-          font-style: italic;
-        }
-        .employment_overview {
-          
+        .skills {
+          margin-left: 10px;
+          .skills_wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            .skill {
+              font-size: 15px;
+              border-radius: 3px;
+              // background-color: $skill_backgroud_color;
+              height: 22px;
+              // padding: 5px 10px;
+              margin-right: 10px;
+            }
+          }
         }
       }
-      
+    }
+  }
+  .education {
+    .education_overview {
+      ul {
+        list-style: none;
+        padding-inline-start: 0px;
+        .education_item {
+          .education_achievement {
+            font-weight: bold;
+            margin-bottom: 5px;
+          }
+          .school_name {
+            color: grey;
+            font-style: italic;
+          }
+        }
+      }
     }
   }
 }
